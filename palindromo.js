@@ -4,8 +4,8 @@
 
 function palindroma(parola) {
 
-  let parolaDivisa = parola.split('');
-
+  let parolaDivisa = mySplit(parola) ;
+  // parola.split('')
   let esito = 0
   
   k = 1 ;
@@ -22,4 +22,17 @@ function palindroma(parola) {
      return 'la parola è palindroma';
    }else{return 'la parola non è palindroma'};
        
+   function mySplit(word){
+   
+     let arr = []; 
+   
+     for ( let i = 0 ; i < word.length; i++){
+   
+       arr.push(word[i]);
+       
+     }
+     return arr
+     
+   }
 }
+
